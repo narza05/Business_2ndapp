@@ -131,8 +131,8 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="FORGOT PASSWORD ?"
-            android:textColor="#ffdb58"
-            android:textSize="10.5sp"/>
+            android:textColor="#000000"
+            android:textSize="10.5sp" />
 
     </LinearLayout>
 
