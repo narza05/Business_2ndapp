@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/employee">
+
+    <TextView
+        android:id="@+id/employee_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="ADD EMPLOYEE"
+        android:textColor="#444242"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_heading"
+        android:orientation="horizontal">
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:text="Previous Customer ?"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+        <!--            android:textColor="#444242" />-->
+
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/yesCheck"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Yes"-->
+        <!--            android:textColor="#444242" />-->
+
+
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/noCheck"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="No"-->
+        <!--            android:textColor="#444242" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/employeeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Employee id"
+                android:textAlignment="center"
+                android:textColor="#444242" />
+            <EditText
+                android:id="@+id/employeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Employee name"
+                android:textAlignment="center"
+                android:textColor="#444242" />
+
+            <EditText
+                android:id="@+id/employeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Employee email"
+                android:textAlignment="center"
+                android:textColor="#444242" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addemployee_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#002AFF"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/updateemployee_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#002AFF"
+            android:text="update" />
+        <Button
+            android:id="@+id/deleteemployee_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#002AFF"
+            android:text="delete" />
+    </LinearLayout>
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/schrollview"-->
+<!--        android:layout_below="@id/buttons"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/textdata"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/buttons"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_addemployee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

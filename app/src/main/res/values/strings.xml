@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Business</string>
+    <string name="title_activity_hr_tabbed">HR_TabbedActivity</string>
+    <string name="HRtab_text_1">EMPLOYEE</string>
+    <string name="HRtab_text_2">ATTENDANCE</string>
+    <string name="HRtab_text_3">CHAT</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#1566e0">
+
+            <ImageView
+                android:id="@+id/toplogo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WELCOME!"
+                android:textSize="35sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="110dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/hrBtn"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="HR\nManagement"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#1566e0"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+        <Button
+            android:id="@+id/salesBtn"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Sales/\nMarketing"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#1566e0"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/row_one"
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/InventoryBtn"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Inventory"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#1566e0"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+        <Button
+            android:id="@+id/FinanceBtn"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Finance"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="#1566e0"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/row_two"
+        android:id="@+id/row_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/storeBtn"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Store Layout"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#1566e0"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"/>
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Logout"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#1566e0"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
