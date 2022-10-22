@@ -11,7 +11,7 @@ public interface chatDAO {
     @Insert
     void insert(chatUserEntity chatUserEntity);
 
-    @Query("SELECT * FROM chatuserentity")
+    @Query("SELECT * FROM chatUserEntity")
     List<chatUserEntity> getchat();
 
 }

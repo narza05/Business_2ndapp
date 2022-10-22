@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.business.INVENTORY.allProducts.add_products;
+import com.example.business.INVENTORY.Orders.OrderByTyping.AddByTyping;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class SecondActivity extends AppCompatActivity {
         inventory_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, add_products.class);
+                Intent intent = new Intent(SecondActivity.this, AddByTyping.class);
                 startActivity(intent);
             }
         });

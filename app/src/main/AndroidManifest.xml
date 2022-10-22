@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.business">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,8 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Business.NoActionBar"
         tools:targetApi="31">
-
-         <!-- <activity -->
+        <activity
+            android:name=".AddByTyping"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderByTyping"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AllWishlist"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddProductsByTyping"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- <activity -->
         <!-- android:name=".EmployeeDataLayout" -->
         <!-- android:exported="false"> -->
         <!-- <meta-data -->
@@ -25,16 +50,13 @@
             android:name=".HrTabbedActivity"
             android:exported="false" />
         <activity
+            android:name=".INVENTORY.Orders.OrderByTyping.AddByTyping"
+            android:exported="false" />
+        <activity
             android:name=".HRemployeebackend.AddEmployee"
             android:exported="false" />
         <activity
             android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".INVENTORY.allProducts.AllProducts"
-            android:exported="false" />
-        <activity
-            android:name=".INVENTORY.allProducts.add_products"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

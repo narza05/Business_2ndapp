@@ -95,7 +95,7 @@ public class AddEmployee extends AppCompatActivity {
 //            super.run();
 //            employeeDatabase employeeDatabase = Room.databaseBuilder(getApplicationContext(), employeeDatabase.class, "employee_data").build();
 //            employeeDAO employeeDAO = employeeDatabase.employeeDAO();
-//            employeeDAO.insert(new employeesUser(Integer.parseInt(idtext.getText().toString()), nametext.getText().toString(), emailtext.getText().toString()));
+//            employeeDAO.insertProduct(new employeesUser(Integer.parseInt(idtext.getText().toString()), nametext.getText().toString(), emailtext.getText().toString()));
 //            idtext.setText("");
 //            nametext.setText("");
 //            emailtext.setText("");
