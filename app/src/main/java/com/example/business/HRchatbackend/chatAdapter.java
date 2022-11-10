@@ -14,6 +14,7 @@ import java.util.List;
 
 public class chatAdapter extends RecyclerView.Adapter<chatAdapter.chatviewholder>{
 
+
     List<chatUserEntity> chats;
 
     public chatAdapter(List<chatUserEntity> chats) {
@@ -23,13 +24,14 @@ public class chatAdapter extends RecyclerView.Adapter<chatAdapter.chatviewholder
     @NonNull
     @Override
     public chatviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_leftchat_data_layout,parent,false);
+        View view;
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_leftchat_data_layout,parent,false);
         return new chatviewholder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull chatviewholder holder, int position) {
-        holder.chat.setText(String.valueOf(chats.get(position).getChatText()));
+            holder.chatleft.setText(String.valueOf(chats.get(position).getChatText()));
     }
 
     @Override
@@ -38,10 +40,10 @@ public class chatAdapter extends RecyclerView.Adapter<chatAdapter.chatviewholder
     }
 
     class chatviewholder extends RecyclerView.ViewHolder {
-        TextView chat;
+        TextView chatleft;
         public chatviewholder(@NonNull View itemView) {
             super(itemView);
-            chat = itemView.findViewById(R.id.leftchatmsgtext);
+            chatleft = itemView.findViewById(R.id.leftchatmsgtext);
         }
     }
 

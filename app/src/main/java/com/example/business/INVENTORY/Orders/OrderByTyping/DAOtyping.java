@@ -15,8 +15,17 @@ public interface DAOtyping {
     @Query("SELECT * FROM EntityTyping")
     List<EntityTyping> getaddedproducts();
 
-//    @Query("DELETE FROM EntityTyping WHERE productname = :name")
-//    void deleteAll(String name);
+    @Query("DELETE FROM EntityTyping WHERE productname = :productname")
+    void deleteall(String productname);
+
+    @Query("UPDATE EntityTyping SET " +
+            "product_description=:description ," +
+            "product_category=:category ," +
+            "product_price=:price ," +
+            "product_quantity=:quantity " +
+            "WHERE " +
+            "productname = :name")
+     void update(String name, String description, String category, String price, String quantity);
 
 //    @Query("DELETE FROM EntityTyping WHERE productname = :name")
 //    void deleteProduct(int name);

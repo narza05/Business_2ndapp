@@ -75,8 +75,15 @@ public class AddEmployee extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+
+        getemployeedata();
+        super.onResume();
+    }
+
     public void getemployeedata() {
-        employeeDatabase employeeDatabase = Room.databaseBuilder(getApplicationContext(), employeeDatabase.class, "employee_data").allowMainThreadQueries().build();
+        employeeDatabase employeeDatabase = Room.databaseBuilder(AddEmployee.this, employeeDatabase.class, "employee_data").allowMainThreadQueries().build();
         employeeDAO employeeDAO = employeeDatabase.employeeDAO();
         employeelist = findViewById(R.id.recyclerview_addemployee);
         employeelist.setLayoutManager(new LinearLayoutManager(this));

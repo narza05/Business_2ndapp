@@ -23,10 +23,14 @@ import com.example.business.HRemployeebackend.employeeDAO;
 
 import java.util.List;
 
+import javax.xml.transform.sax.SAXResult;
+
 public class HrFrag3_chat extends Fragment {
     TextView msg;
     ImageButton sendbutton;
     RecyclerView recyclerView;
+
+
 
     @Nullable
     @Override
@@ -55,9 +59,8 @@ public class HrFrag3_chat extends Fragment {
                 if (!msgtext.isEmpty()){
                     chatDAO.insert(new chatUserEntity(msgtext));
                     msg.setText("");
-//                    id++;
-                    getchat();
                     Toast.makeText(getContext(), "Sent", Toast.LENGTH_SHORT).show();
+                    getchat();
                 }
                 else {
                     Toast.makeText(getContext(), "Field empty", Toast.LENGTH_SHORT).show();
@@ -72,6 +75,9 @@ public class HrFrag3_chat extends Fragment {
         List<chatUserEntity> msglist = chatDAO.getchat();
         chatAdapter chatAdapter = new chatAdapter(msglist);
         recyclerView.setAdapter(chatAdapter);
+        for (int i=0;i<1;i++){
+            System.out.println(msglist.get(i).toString());
+        }
     }
 
 }

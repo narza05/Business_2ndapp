@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/addprodudct_bytyping"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="By Typing"/>
+    <item
+        android:id="@+id/addprodudct_byimage"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="By Image"/>
+    <item
+        android:id="@+id/addprodudct_byaudio"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="By Audio"/>
+
+</menu>

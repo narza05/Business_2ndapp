@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,21 @@
         android:theme="@style/Theme.Business.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".AddByTyping"
+            android:name=".AllOrders"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CompleteWishlistByTyping"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddByImage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -48,6 +65,15 @@
         <!-- </activity> -->
         <activity
             android:name=".HrTabbedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".INVENTORY.Orders.OrderByImage.AddByImage"
+            android:exported="false" />
+        <activity
+            android:name=".INVENTORY.Orders.AllOrders.AllOrders"
+            android:exported="false" />
+        <activity
+            android:name=".INVENTORY.Orders.OrderByTyping.CompleteWishlistByTyping"
             android:exported="false" />
         <activity
             android:name=".INVENTORY.Orders.OrderByTyping.AddByTyping"

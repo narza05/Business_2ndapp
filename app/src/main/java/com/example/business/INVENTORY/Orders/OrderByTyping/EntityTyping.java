@@ -1,5 +1,7 @@
 package com.example.business.INVENTORY.Orders.OrderByTyping;
 
+import android.widget.ImageView;
+
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -11,12 +13,16 @@ public class EntityTyping {
     @PrimaryKey
     @NonNull
     public String productname ;
+
     @ColumnInfo(name = "product_description")
     public String productdescription;
+
     @ColumnInfo(name = "product_category")
     public String productcategory;
+
     @ColumnInfo(name = "product_price")
     public String productprice;
+
     @ColumnInfo(name = "product_quantity")
     public String productquantity;
 
@@ -26,7 +32,9 @@ public class EntityTyping {
         this.productcategory = productcategory;
         this.productprice = productprice;
         this.productquantity = productquantity;
+
     }
+
 
     public String getProductname() {
         return productname;
